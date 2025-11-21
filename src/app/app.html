@@ -1,0 +1,208 @@
+<!-- <div class="button-demo">
+  <button mat-button>Text</button>
+  <button mat-raised-button>Raised</button>
+  <button mat-flat-button>Flat</button>
+  <button mat-stroked-button>Stroked</button>
+  <button mat-icon-button>
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-fab>
+    <mat-icon>add</mat-icon>
+  </button>
+  <button mat-mini-fab>
+    <mat-icon>edit</mat-icon>
+  </button>
+</div> -->
+<div class="button-colors">
+  <!-- <button mat-raised-button color="primary">Primary</button>
+  <button mat-stroked-button color="accent">Accent</button>
+  <button mat-flat-button color="warn">Warn</button> -->
+  <button mat-raised-button color="primary">
+    <mat-icon>save</mat-icon>
+    Save
+  </button>
+
+  <button mat-raised-button color="accent">
+    Edit
+    <mat-icon>edit</mat-icon>
+  </button>
+
+  <button mat-raised-button>
+    <mat-icon svgIcon="save-icon"></mat-icon>
+    Save
+  </button>
+
+  <button mat-fab color="primary">
+    <mat-icon>add</mat-icon>
+  </button>
+
+  <button mat-mini-fab color="accent">
+    <mat-icon>edit</mat-icon>
+  </button>
+
+  <button mat-flat-button color="primary">
+    <mat-icon>arrow_forward</mat-icon>
+    Continue
+  </button>
+
+  <button mat-stroked-button color="warn">
+    <mat-icon>delete</mat-icon>
+    Delete
+  </button>
+
+  <button mat-raised-button disabled>Disabled Button</button>
+
+  <button mat-raised-button color="primary" [disabled]="loading">Save</button>
+
+  <button mat-raised-button color="primary" (click)="save()" [disabled]="loading">
+    <mat-progress-spinner
+      *ngIf="loading"
+      mode="indeterminate"
+      diameter="20"
+      strokeWidth="3"
+    ></mat-progress-spinner>
+
+    @if (!loading) {
+    <span>Save</span>
+    }
+  </button>
+
+  <button mat-fab [disabled]="loading">
+    <mat-progress-spinner
+      *ngIf="loading"
+      mode="indeterminate"
+      diameter="24"
+      strokeWidth="3"
+    ></mat-progress-spinner>
+
+    @if (!loading) {
+    <mat-icon>add</mat-icon>
+    }
+  </button>
+
+  <div class="button-group">
+    <button mat-raised-button color="primary">Save</button>
+    <button mat-stroked-button color="accent">Cancel</button>
+  </div>
+
+  <div class="button-group-vertical">
+    <button mat-flat-button color="primary">Option 1</button>
+    <button mat-flat-button color="accent">Option 2</button>
+    <button mat-flat-button color="warn">Option 3</button>
+  </div>
+
+  <div class="button-space-between">
+    <button mat-raised-button color="primary">Previous</button>
+    <button mat-raised-button color="primary">Next</button>
+  </div>
+
+  <div class="button-wrap">
+    <button mat-button>One</button>
+    <button mat-button>Two</button>
+    <button mat-button>Three</button>
+    <button mat-button>Four</button>
+  </div>
+
+  <mat-button-toggle-group name="format">
+    <mat-button-toggle value="bold">Bold</mat-button-toggle>
+    <mat-button-toggle value="italic">Italic</mat-button-toggle>
+    <mat-button-toggle value="underline">Underline</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  <mat-toolbar color="primary">
+    <button mat-icon-button><mat-icon>menu</mat-icon></button>
+    <span>My App</span>
+    <span class="spacer"></span>
+    <button mat-raised-button color="accent">Login</button>
+  </mat-toolbar>
+
+  <button mat-raised-button class="my-button">Custom Button</button>
+
+  <button mat-raised-button class="btn-sm">Small</button>
+  <button mat-raised-button class="btn-lg">Large</button>
+
+  <button mat-stroked-button class="btn-pill">Pill Button</button>
+
+  <button mat-raised-button class="btn-circle">
+    <mat-icon>check</mat-icon>
+  </button>
+
+  <button mat-button class="btn-hover">Hover Me</button>
+
+  <button mat-raised-button class="custom-ripple">Ripple Button</button>
+
+  <button mat-raised-button class="btn-theme">Theme Button</button>
+</div>
+
+<form (ngSubmit)="submitForm()" #myForm="ngForm">
+  <mat-form-field>
+    <input matInput placeholder="Name" name="name" ngModel required />
+  </mat-form-field>
+
+  <div class="form-actions">
+    <button mat-stroked-button type="button">Cancel</button>
+    <button mat-raised-button color="primary" type="submit" [disabled]="myForm.invalid">
+      Submit
+    </button>
+  </div>
+</form>
+
+<mat-toolbar color="primary">
+  <button mat-icon-button><mat-icon>menu</mat-icon></button>
+
+  <span>Dashboard</span>
+
+  <span class="spacer"></span>
+
+  <button mat-button>Login</button>
+  <button mat-raised-button color="accent">Sign Up</button>
+</mat-toolbar>
+
+<button mat-raised-button color="primary" routerLink="/products">
+  <mat-icon>store</mat-icon>
+  Products
+</button>
+
+<button mat-stroked-button routerLink="/settings">
+  <mat-icon>settings</mat-icon>
+  Settings
+</button>
+
+<h2 mat-dialog-title>Delete Item?</h2>
+
+<!-- <mat-dialog-content>
+  This action cannot be undone.
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-raised-button color="warn" [mat-dialog-close]="true">
+    Delete
+  </button>
+</mat-dialog-actions> -->
+
+<!-- <input type="file" hidden #fileUpload (change)="uploadFile($event)" />
+
+<button mat-raised-button color="primary" (click)="fileUpload.click()">
+  <mat-icon>upload</mat-icon>
+  Upload File
+</button> -->
+
+<!-- <button mat-raised-button color="primary" (click)="saveData()" [disabled]="loading">
+  <mat-progress-spinner *ngIf="loading" mode="indeterminate" diameter="20" strokeWidth="3">
+  </mat-progress-spinner>
+
+  <span *ngIf="!loading">Save Changes</span>
+</button> -->
+
+<!-- <button mat-fab color="accent" class="fab-add" (click)="createItem()">
+  <mat-icon>add</mat-icon>
+</button> -->
+
+<!-- <button mat-icon-button color="primary" (click)="edit(row)">
+  <mat-icon>edit</mat-icon>
+</button>
+
+<button mat-icon-button color="warn" (click)="delete(row)">
+  <mat-icon>delete</mat-icon>
+</button> -->

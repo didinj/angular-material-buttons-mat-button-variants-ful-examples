@@ -1,0 +1,99 @@
+.button-demo button {
+  margin-right: 12px;
+}
+
+.button-colors button {
+  margin-right: 12px;
+}
+
+.button-group button {
+  margin-right: 12px;
+}
+
+.button-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.my-button {
+  background-color: #3f51b5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.btn-sm {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.btn-lg {
+  padding: 14px 28px;
+  font-size: 18px;
+}
+
+.btn-pill {
+  border-radius: 50px;
+}
+
+.btn-circle {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+}
+
+.btn-hover {
+  transition: background-color 0.3s ease;
+}
+
+.btn-hover:hover {
+  background-color: #673ab7;
+  color: white;
+}
+
+.btn-hover:active {
+  opacity: 0.8;
+}
+
+::ng-deep .mat-mdc-outlined-button {
+  border-color: #4caf50 !important;
+}
+
+::ng-deep .mat-mdc-icon-button {
+  width: 40px;
+  height: 40px;
+}
+
+.custom-ripple .mat-ripple-element {
+  background-color: rgba(255, 0, 0, 0.3);
+  /* red ripple */
+}
+
+:root {
+  --primary-btn-bg: #2196f3;
+  --primary-btn-text: #ffffff;
+}
+
+.btn-theme {
+  background-color: var(--primary-btn-bg);
+  color: var(--primary-btn-text);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.fab-add {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+}
